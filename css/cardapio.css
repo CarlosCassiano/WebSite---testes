@@ -1,0 +1,15 @@
+/* Cardapio Tela de Cardapio */
+
+.content_cardapio .img_fundo_papel{
+    height: 100vh;
+    background-image: linear-gradient(rgba(29, 29, 29, 0.8), rgba(29, 29, 29, 0.8)), url(/img/FundoPapelPardo.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 1px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

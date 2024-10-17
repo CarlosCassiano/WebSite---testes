@@ -105,7 +105,7 @@ html{
 }
 
 .first-section h1 {
-    color: #E5B977;
+    color: #8CC5BF;
     font-family: "Monoton", sans-serif;
     font-size: 6rem;
     font-weight: 400;
@@ -129,7 +129,7 @@ html{
     height: 60px;
     cursor: pointer;
     text-transform: uppercase;
-    background-color: #E5B977;
+    background-color: #8CC5BF;
     border-radius: 10px;
     color: black;
     font-weight: 700;
@@ -390,27 +390,6 @@ footer {
         padding: 2.5rem 1.5rem;
     }
 }
-
-
-/* Cardapio Tela de Cardapio */
-
-.content_cardapio .img_fundo_papel{
-    height: 100vh;
-    background-image: linear-gradient(rgba(214, 214, 214, 0.8), rgba(99, 99, 99, 0.8)),url(../img/FundoPapelPardo.jpg);
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-y: 1px;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-
-
-
 
 
 
