@@ -36,6 +36,8 @@ html{
     background-color: #171718;
     position: fixed;
     padding-left: 18rem;
+    padding-right: 18rem;
+    z-index: 100;
 }
 
 .logo {
@@ -61,10 +63,10 @@ html{
 .content .list-menu li a{
     padding-top: 3rem;
     padding-bottom: 2rem;
-    padding-right: 1rem;
+    padding-right: 0.9rem;
     padding-left: 1rem;
     color: white;
-    font-size: 0.99rem;
+    font-size: 1rem;
     text-transform: uppercase;
     font-weight: 500;
     transition: all 200ms ease-in;
@@ -191,22 +193,29 @@ html{
     width: 600px;
 }
 
-/* Cardapio */
+/* Cardapio Tela principal */
 
 .itens-cardapio{
-    width: 90%;
-    padding: 20px;
-    margin: 100px auto;
+    width: 100%;
+    padding: 100px;
+    margin: auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    background-image: linear-gradient(rgba(214, 214, 214, 0.8), rgba(99, 99, 99, 0.8)),url(/img/FundoPapelPardo.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 1px;
 }
 
 .box{
+    position: relative;
     width: 250px;
     margin: 0 10px;
     box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
     transition: 1s;
+    overflow: hidden;
 }
 
 .box img{
@@ -215,21 +224,22 @@ html{
     border-radius: 5px;
 }
 
-.box h1{
-    width: 100%;
-    height: 100%;
+.box h1 {
+    position: absolute;
     top: 0;
     left: 0;
-    position: absolute;
-    background: rgba(0,0,0,0.6);
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+    color: white;
+    font-size: 1.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     opacity: 0;
-    transition: 0.6s;
-    z-index: 10; /* Aumente apenas se necessário */
-    pointer-events: none; /* Não bloqueia cliques */
+    transition: opacity 0.5s ease;
+    text-align: center;
+    border-radius: 5px;
 }
 
 .box h1:hover{
@@ -381,6 +391,9 @@ footer {
     }
 }
 
+
+/* Cardapio Tela de Cardapio */
+
 .content_cardapio .img_fundo_papel{
     height: 100vh;
     background-image: linear-gradient(rgba(214, 214, 214, 0.8), rgba(99, 99, 99, 0.8)),url(/img/FundoPapelPardo.jpg);
@@ -393,4 +406,102 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+
+
+
+
+
+
+
+
+/* Franquia */
+
+.slide_fade {
+    display: none;
+}
+
+.slide_fade img{
+    vertical-align: middle;
+    margin-top: 100px;
+}
+
+.container_slide{
+    max-width: 70%;
+    position: relative;
+    margin: auto;
+}
+
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover{
+    background-color: rgba(0,0,0,0.8);
+}
+
+.text{
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 8px;
+}
+.numberSlide{
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dot{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    margin-bottom: 25px;
+}
+
+.active, .dot:hover{
+    background-color: #717171;
+}
+
+.fade{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade{
+    from {opacity: .4;}
+    to {opacity: 1;}
+}
+@keyframes fade {
+    from {opacity: .4;}
+    to {opacity: 1;}
 }
