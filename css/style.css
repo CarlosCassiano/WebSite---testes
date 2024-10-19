@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap');
 
 :root{
     --color-neutral-0: #0e0c0c;
@@ -249,8 +250,9 @@ html{
 .box h1:hover{
     opacity: 1;
     pointer-events: auto; /* Permite iterar no hover */
-    text-shadow: 0 9px #97041f;
-    font-family: "Monoton", sans-serif;
+    text-shadow: 0 0 15px #8CC5BF;
+    font-family: "Bungee Tint", sans-serif;
+    font-size: 23px;
 }
 
 .box:hover{
@@ -384,7 +386,7 @@ footer {
     display: flex;
     justify-content: center;
     background-color: var(--color-neutral-0);
-    font-size: 0.9rem;
+    font-size: 1.3rem;
     padding: 1.5rem;
     font-weight: 100;
 }
