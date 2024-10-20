@@ -1,0 +1,94 @@
+/* */
+
+@import url('https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap');
+
+
+
+.principal_quemsomos{
+    padding-top: 8%;
+    background-image: linear-gradient(rgba(29, 29, 29, 0.8), rgba(29, 29, 29, 0.8)), url(../img/Fundo2.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 1px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.principal_quemsomos {
+    background-image: linear-gradient(rgba(29, 29, 29, 0.8), rgba(29, 29, 29, 0.8)), url(../img/Fundo2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10%;
+}
+
+.content_quemsomos {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Duas colunas para as primeiras divs */
+    grid-template-rows: auto; /* Altura automática para cada linha */
+    gap: 20px; /* Espaço entre os itens */
+    max-width: 1200px; /* Controla a largura máxima do conteúdo */
+    width: 100%;
+}
+
+.content_quemsomos > .div1,
+.content_quemsomos > .div2 {
+    grid-row: 1; /* Mantém essas divs na primeira linha */
+}
+
+.content_quemsomos > .div3,
+.content_quemsomos > .div4,
+.content_quemsomos > .div5,
+.content_quemsomos > .div6,
+.content_quemsomos > .div7,
+.content_quemsomos > .div8,
+.content_quemsomos > .div9 {
+    grid-column: 1 / -1; /* Ocupam toda a linha */
+}
+
+/* Estilizando as seções para que as imagens se alinhem corretamente */
+.content_quemsomos > div {
+    display: grid; /* Cada div interna organiza suas imagens */
+    gap: 10px; /* Espaço entre as imagens */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Imagens adaptáveis */
+    align-items: center;
+}
+
+/* Ajustando as imagens para que fiquem proporcionais e centradas */
+img {
+    width: 100%; /* Ocupa toda a largura disponível na célula */
+    height: auto; /* Mantém a proporção da imagem */
+    object-fit: cover; /* Cobre a área disponível sem distorcer */
+    border-radius: 8px; /* Bordas arredondadas */
+    max-height: 250px; /* Limita a altura das imagens */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra leve para destaque */
+}
+
+/* Ajuste específico para divs que contêm muitas imagens */
+.div3, .div4, .div5, .div6, .div7, .div8, .div9 {
+    justify-content: center; /* Centraliza as imagens dentro das divs */
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo translúcido */
+    border-radius: 8px; /* Bordas arredondadas nas seções */
+}
+
+/* Ajuste responsivo: diminui o tamanho das imagens em telas menores */
+@media (max-width: 768px) {
+    img {
+        max-height: 150px; /* Limita a altura em dispositivos menores */
+    }
+    .content_quemsomos > div {
+        grid-template-columns: 1fr; /* Uma coluna em telas menores */
+    }
+}
+
+
+      
