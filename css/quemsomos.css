@@ -42,7 +42,7 @@
 .content_quemsomos > .div1,
 .content_quemsomos > .div2 {
     grid-row: 1; /* Mantém essas divs na primeira linha */
-    background-color: #8CC5BF;
+    background-color: #8cc5bf7e;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -88,20 +88,32 @@ img {
     border-radius: 8px; /* Bordas arredondadas nas seções */
 }
 
+.div3 h1{
+    margin: 10px;
+    color: #8CC5BF;
+}
+
 h1{
-    font-size: 40px;
+    text-align: center;
+    color: #97041f;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: "Monoton", sans-serif;
+    text-shadow: 0 15px rgba(255, 255, 255, 0.178);
 }
 
 p{
     margin-top: 10%;
     font-size: 15px;
     text-align: justify;
+    
 }
 
 /* Responsividade para telas menores */
 @media (max-width: 768px) {
     .content_quemsomos {
         grid-template-columns: 1fr; /* Uma coluna em telas pequenas */
+        margin-top: 5%;
     }
 
     .content_quemsomos > .div1,
@@ -124,5 +136,16 @@ p{
     }
 }
 
+@media (max-width: 645px){
+    .content_quemsomos{
+        margin-top: 20%;
+    }
+}
+
+@media (max-width: 399px){
+    .content_quemsomos{
+        margin-top: 20%;
+    }
+}
 
       

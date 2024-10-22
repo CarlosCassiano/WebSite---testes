@@ -8,7 +8,7 @@
 }
 
 .container_slide{
-    max-width: 100%;
+    max-width: 76%;
     position: relative;
     margin: auto;
 }
@@ -85,3 +85,9 @@
     from {opacity: .4;}
     to {opacity: 1;}
 } 
+
+@media (max-width: 870px){
+    .container_slide{
+        max-width: 100%;
+    }
+}
