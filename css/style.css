@@ -414,7 +414,7 @@ footer {
 
 /* Franquia */
 
-.slide_fade {
+/* .slide_fade {
     display: none;
 }
 
@@ -500,7 +500,7 @@ footer {
 @keyframes fade {
     from {opacity: .4;}
     to {opacity: 1;}
-}
+} */
 
 
 
