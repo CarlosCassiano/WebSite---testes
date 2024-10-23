@@ -82,8 +82,6 @@ html{
 /* first-section */
 
 
-
-
 .first-section {
     height: 100vh;
     background-image: linear-gradient(rgba(29, 29, 29, 0.8), rgba(29, 29, 29, 0.8)), url(../img/Fundo2.png);
@@ -108,14 +106,62 @@ html{
 .first-section h1 {
     color: #8CC5BF;
     font-family: "Monoton", sans-serif;
-    font-size: 6rem;
+    font-size: 8rem;
     font-weight: 400;
     text-transform: uppercase;
     font-style: normal;
     margin-bottom: 1rem;
     text-shadow: 0 15px #97041f;
     word-spacing: 25px;
+    animation: blink 3s infinite;
+    -webkit-animation: blink 3s infinite;
 }
+
+@-webkit-keyframes blink {
+
+    20%,
+    24%,
+    55% {
+        color: #111;
+        text-shadow: none;
+    }
+
+    0%,
+    19%,
+    21%,
+    23%,
+    25%,
+    54%,
+    56%,
+    100% {
+        text-shadow: 0 0 5px #97041f, 0 0 15px #97041f, 0 0 20px #97041f, 0 0 40px #97041f, 0 0 60px #97041f, 0 0 10px #97041f, 0 0 98px #97041f;
+        color: #fff6a9;
+    }
+}
+
+@keyframes blink {
+
+    20%,
+    24%,
+    55% {
+        color: #111;
+        text-shadow: none;
+    }
+
+    0%,
+    19%,
+    21%,
+    23%,
+    25%,
+    54%,
+    56%,
+    100% {
+        text-shadow: 0 0 5px #97041f, 0 0 15px #97041f, 0 0 20px #97041f, 0 0 40px #97041f, 0 0 60px #97041f, 0 0 10px #97041f, 0 0 98px #97041f;
+        color: #fff6a9;
+    }
+}
+
+
 
 .first-section h2{
     color: #fff4e4;
@@ -673,3 +719,5 @@ footer {
 
     
 }
+
+
