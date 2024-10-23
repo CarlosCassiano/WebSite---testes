@@ -64,6 +64,8 @@
 @media (max-width: 768px) {
     .container {
       flex-direction: column;
+      padding-top: 25%;
+      padding-bottom: 25%;
     }
   
     .categorias {
