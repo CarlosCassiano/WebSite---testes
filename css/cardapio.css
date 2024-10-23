@@ -1,15 +1,97 @@
-/* Cardapio Tela de Cardapio */
-
-.content_cardapio .img_fundo_papel{
-    height: 100vh;
-    background-image: linear-gradient(rgba(29, 29, 29, 0.8), rgba(29, 29, 29, 0.8)), url(../img/FundoPapelPardo.jpg);
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-y: 1px;
-    width: 100vw;
+.container {
+    display: flex;
+    gap: 20px;
+    padding: 10%;
+  }
+  
+  .categorias {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+    gap: 15px;
+    width: 250px;
+  }
+  
+  .categoria {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  
+  .categoria img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    filter: brightness(0.7);
+  }
+  
+  .categoria span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .detalhes {
+    flex: 1;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .lanches {
+    display: none;
+    list-style: none;
+  }
+  
+  .lanches li {
+    margin-bottom: 10px;
+  }
+  
+  .lanches strong {
+    font-weight: bold;
+    color: #333;
+  }
+
+
+/* ----------- Responsividade ----------- */
+  /* Telas menores que 768px (celulares) */
+@media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .categorias {
+      width: 100%;
+    }
+  
+    .categoria img {
+      height: 150px; /* Aumenta altura das imagens para preencher melhor */
+    }
+  
+    .detalhes {
+      width: 100%;
+      margin-top: 20px;
+    }
+  }
+  
+  /* Telas entre 769px e 1024px (tablets) */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+      flex-direction: row;
+      gap: 10px;
+    }
+  
+    .categorias {
+      width: 30%; /* Ajusta para caber melhor no layout de tablet */
+    }
+  
+    .detalhes {
+      width: 65%; /* Maior espaço para os detalhes dos lanches */
+    }
+  }

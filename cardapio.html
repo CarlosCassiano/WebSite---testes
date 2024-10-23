@@ -35,9 +35,77 @@
 
     </header>
 
-    <div class="content_cardapio">
-        <img src="" alt="" class="img_fundo_papel">
-    </div>
+    <div class="container">
+        <div class="categorias">
+          <div class="categoria" onclick="toggleLanches('lanches1')">
+            <img src="img/Hamburgue2.jpg" alt="Hambúrguer">
+            <span>Hambúrgueres</span>
+          </div>
+          <div class="categoria" onclick="toggleLanches('lanches2')">
+            <img src="imgQuemSomos/Entreveiro.jpg" alt="Pizza">
+            <span>Batatão no Disco</span>
+          </div>
+          <div class="categoria" onclick="toggleLanches('lanches3')">
+            <img src="imgQuemSomos/hamburguePequenoMilkshake.jpg" alt="Salgados">
+            <span>Combo Kids</span>
+          </div>
+          <div class="categoria" onclick="toggleLanches('lanches4')">
+            <img src="imgQuemSomos/CachorroQuente.jpg" alt="Bebidas">
+            <span>Cachorrão prensado</span>
+          </div>
+          <div class="categoria" onclick="toggleLanches('lanches5')">
+            <img src="imgQuemSomos/XisPerto.jpg" alt="Sobremesas">
+            <span>Xis</span>
+          </div>
+          <div class="categoria" onclick="toggleLanches('lanches6')">
+            <img src="imgQuemSomos/BatataCarneCebola.jpg" alt="Massas">
+            <span>Petiscos</span>
+          </div>
+          <div class="categoria" onclick="toggleLanches('lanches7')">
+            <img src="imgQuemSomos/BatataRefrigerante.jpg" alt="Saladas">
+            <span>Bebidas</span>
+          </div>
+          <div class="categoria" onclick="toggleLanches('lanches8')">
+            <img src="imgQuemSomos/DrinkDoble.jpg" alt="Petiscos">
+            <span>Drink</span>
+          </div>
+        </div>
+    
+        <div class="detalhes">
+          <ul id="lanches1" class="lanches">
+            <li><strong>Clássico</strong>: Pão, carne, queijo, alface, tomate.</li>
+            <li><strong>Cheddar Bacon</strong>: Pão, carne, cheddar, bacon crocante.</li>
+          </ul>
+          <ul id="lanches2" class="lanches">
+            <li><strong>Calabresa</strong>: Calabresa, cebola e queijo.</li>
+            <li><strong>Margherita</strong>: Molho de tomate, manjericão e mozzarella.</li>
+          </ul>
+          <ul id="lanches3" class="lanches">
+            <li><strong>Coxinha</strong>: Massa de batata com frango desfiado.</li>
+            <li><strong>Esfiha</strong>: Massa recheada com carne moída.</li>
+          </ul>
+          <ul id="lanches4" class="lanches">
+            <li><strong>Refrigerante</strong>: Coca-Cola, Guaraná, Fanta.</li>
+            <li><strong>Suco</strong>: Laranja, maracujá, morango.</li>
+          </ul>
+          <ul id="lanches5" class="lanches">
+            <li><strong>Pudim</strong>: Pudim de leite condensado.</li>
+            <li><strong>Brownie</strong>: Brownie de chocolate com nozes.</li>
+          </ul>
+          <ul id="lanches6" class="lanches">
+            <li><strong>Espaguete</strong>: Com molho de tomate e queijo parmesão.</li>
+            <li><strong>Lasagna</strong>: Recheada com carne e queijo.</li>
+          </ul>
+          <ul id="lanches7" class="lanches">
+            <li><strong>Caesar</strong>: Alface, croutons, parmesão, frango.</li>
+            <li><strong>Verde</strong>: Mix de folhas verdes e molho vinagrete.</li>
+          </ul>
+          <ul id="lanches8" class="lanches">
+            <li><strong>Batata Frita</strong>: Batata crocante com ketchup.</li>
+            <li><strong>Bolinho de Bacalhau</strong>: Massa de bacalhau frita.</li>
+          </ul>
+        </div>
+      </div>
 
 
 
@@ -115,5 +183,7 @@
 
     <script src="js/clickMenu.js" defer></script>
     <script src="js/script.js" defer></script>
+    <script src="js/cardapio.js" defer></script>
+
 </body>
 </html>
