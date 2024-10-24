@@ -1,7 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap');
+
+
+
 .container {
     display: flex;
     gap: 20px;
     padding: 10%;
+    background-image: linear-gradient(rgba(29, 29, 29, 0.8), rgba(29, 29, 29, 0.8)),url(../img/FundoPapelPardo.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 1px;
   }
   
   .categorias {
@@ -31,17 +42,18 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 25px;
+    font-weight: 400;
+    font-family: "Monoton", sans-serif;
+    /* font-weight: bold; */
     text-align: center;
   }
   
   .detalhes {
     flex: 1;
     padding: 10px;
-    background-color: white;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0);
   }
   
   .lanches {
@@ -51,8 +63,19 @@
   
   .lanches li {
     margin-bottom: 10px;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;  /* Centraliza horizontalmente */
+    align-items: center;      /* Centraliza verticalmente */
+    height: 9vh; 
+    padding-bottom: 10px; /* Espaço entre o texto e a linha */
+    border-bottom: 1px solid #ddd; /* Linha de separação */
   }
   
+  .lanches li:last-child {
+    border-bottom: none; /* Remove a linha do último item */
+  }
+
   .lanches strong {
     font-weight: bold;
     color: #333;
@@ -69,10 +92,15 @@
 
   .categorias {
     width: 100%;
+    min-width: 100%;
   }
 
   .categoria img {
     height: 150px;
+  }
+
+  .detalhes {
+    display: none; /* Oculta a área de detalhes em dispositivos móveis */
   }
 
   /* Popup em tela cheia */
@@ -122,10 +150,18 @@
   .container{
       padding-top: 20%;
   }
+
+  .detalhes {
+    display: none; /* Oculta a área de detalhes em dispositivos móveis */
+  }
 }
 
 @media (max-width: 399px){
   .container{
       padding-top: 20%;
+  }
+
+  .detalhes {
+    display: none; /* Oculta a área de detalhes em dispositivos móveis */
   }
 }
