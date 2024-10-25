@@ -316,10 +316,27 @@ html{
 }
 
 .cardapio-principal{
+    padding: 3%;
     font-size: 50px;
     margin: auto;
     display: flex;
     justify-content: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.692), rgba(29, 29, 29, 0)), url(../img/Restaurante.jpg);
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 1px;
+    color: #8CC5BF;
+    font-family: "Monoton", sans-serif;
+    font-size: 8rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-style: normal;
+    /* margin-bottom: 1rem; */
+    text-shadow: 0 15px #97041f;
+    word-spacing: 25px;
+    animation: blink 3s infinite;
+    -webkit-animation: blink 3s infinite;
 }
 
 /* Rodape */
@@ -487,7 +504,10 @@ footer {
         width: 400px;
     }
 
-
+    .cardapio-principal{
+        font-size: 7rem;
+        padding: 5%;
+    }
 
     
 }
@@ -497,10 +517,22 @@ footer {
     html {
         font-size: 50%;
     }
+
+    .cardapio-principal{
+        font-size: 6rem;
+        padding: 5%;
+    }
     
 }
 
 @media (max-width: 870px) {
+
+    .sobre-nos img {
+        width: 400px;
+        height: 400px;
+        margin-left: 10px;
+    }
+
     .content {
         justify-content: space-between;
         padding: 0px 40px;
@@ -649,6 +681,11 @@ footer {
         z-index: 50;
     }
 
+    .cardapio-principal{
+        font-size: 7rem;
+        padding: 5%;
+    }
+
 }
 
 
@@ -658,9 +695,21 @@ footer {
         width: 350px;
         text-align: center;
     }
+
+    .cardapio-principal{
+        font-size: 5rem;
+        padding: 5%;
+    }
+
 }
 
 @media (max-width: 645px) {
+
+    .cardapio-principal{
+        font-size: 5rem;
+        padding: 5%;
+    }
+
     .sobre-nos img {
         width: 400px;
         margin-left: 10px;
@@ -699,22 +748,23 @@ footer {
 @media (max-width: 399px) {
 
     .conteudo-principal h1 {
-       font-size: 5rem;
+       font-size: 8rem;
     }
     .conteudo-principal h2 {
-       font-size: 2rem;
+       font-size: 3rem;
     }
 
 
     .sobre-nos img {
         width: 300px;
-        height: auto;
+        height: 300px;
         margin-left: 10px;
     }
 
     .contentsobre p {
         text-align: justify;
-        width: 200px;
+        width: 300px;
+        margin-bottom: 1%;
      }
 
     

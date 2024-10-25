@@ -100,6 +100,9 @@ h1{
     font-weight: 400;
     font-family: "Monoton", sans-serif;
     text-shadow: 0 15px rgba(255, 255, 255, 0.178);
+    word-spacing: 15px;
+    animation: blink 3s infinite;
+    -webkit-animation: blink 3s infinite;
 }
 
 p{

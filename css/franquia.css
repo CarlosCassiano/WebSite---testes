@@ -1,3 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap');
+
+
+
+
+.fundo_franquiado{
+    background-image: linear-gradient(rgba(29, 29, 29, 0.8), rgba(29, 29, 29, 0.8)), url(../img/Fundo2.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 1px;
+}
+
+
 .slide_fade {
     display: none;
 }
@@ -89,5 +105,45 @@
 @media (max-width: 870px){
     .container_slide{
         max-width: 100%;
+    }
+}
+
+.content_btn_franquiado{
+    width: 100vw;
+    height: auto;
+    padding-bottom: 9%;
+    display: flex;
+    justify-content: center;
+}
+
+.btn_franquiado{
+    width: 60rem;
+    height: 7rem;
+    cursor: pointer;
+    border: 1px solid #8CC5BF;
+    background-color: transparent;
+    border-radius: 10px;
+
+    color: rgb(255, 0, 0);
+    font-weight: 400;
+    font-size: 4rem;
+    margin-top: 5rem;
+    transition: all 0.2s ease-in-out;
+    font-family: "Monoton", sans-serif;
+    text-transform: uppercase;
+}
+
+.btn_franquiado:hover{
+    box-shadow: 0 0 15px #97041f, inset 0 0 15px #97041f;
+    text-shadow: 0 0 15px #97041f;
+    border: 1px solid #97041f;
+    background-color: transparent;
+    color: #8CC5BF
+}
+
+
+@media (max-width: 720px){
+    .btn_franquiado {
+        font-size: 2.8rem;
     }
 }
