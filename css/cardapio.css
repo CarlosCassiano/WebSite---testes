@@ -64,11 +64,11 @@
   .lanches li {
     margin-bottom: 10px;
     font-size: 1.5rem;
-    display: flex;
-    justify-content: center;  /* Centraliza horizontalmente */
+    color: #ddd;
+    display: flex;  /* Centraliza horizontalmente */
     align-items: center;      /* Centraliza verticalmente */
-    height: 9vh; 
-    padding-bottom: 10px; /* Espaço entre o texto e a linha */
+    height: 9vh;  
+    padding-bottom: 12px;/* Espaço entre o texto e a linha */
     border-bottom: 1px solid #ddd; /* Linha de separação */
   }
   
@@ -77,8 +77,11 @@
   }
 
   .lanches strong {
-    font-weight: bold;
-    color: #333;
+    font-size: 21px;
+    font-weight: 400;
+    font-family: "Monoton", sans-serif;
+    /* font-weight: bold; */
+    color: #8CC5BF;
   }
 
 
