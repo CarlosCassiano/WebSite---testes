@@ -479,6 +479,42 @@ footer {
 }
 
 
+.iconbutton {
+    position: fixed;
+    bottom: 60px;
+    right: 30px;
+    z-index: 998;
+    
+}
+
+.icon-content {
+    display: flex;
+    align-items: center;
+    background-color: #25d366;
+    border-radius: 25px;
+    padding: 5px 10px;
+    /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); */
+    box-shadow: 0 0 15px #97041f, inset 0 0 15px #97041f;
+    text-shadow: 0 0 15px #97041f;
+    border: 1px solid #97041f;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 8px;
+}
+
+.icon-text {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+
+
 
 
 /* Responsividade */
@@ -526,6 +562,15 @@ footer {
 }
 
 @media (max-width: 870px) {
+
+
+    .icon-content {
+        padding: 5px;
+        padding-right: 0.2px; /* Reduz o padding para manter o ícone centralizado */
+    }
+    .icon-text {
+        display: none;
+    }
 
     .sobre-nos img {
         width: 400px;
