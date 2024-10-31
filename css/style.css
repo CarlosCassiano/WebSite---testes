@@ -307,7 +307,7 @@ html{
     pointer-events: auto; /* Permite iterar no hover */
     text-shadow: 0 0 15px #8CC5BF;
     font-family: "Monoton", sans-serif;
-    font-size: 2.2rem;
+    font-size: 2rem;
 }
 
 .box:hover{
